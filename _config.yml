@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is a personal blog used most to register a 
   few insights of my own. Most of the content is
   about tech since this project works as my portifolio.
-baseurl: 
+baseurl: /
 url: http://costa.fyi/
 instagram_username: andersoncoxta
 github_username:  andersonlzcosta
@@ -32,6 +32,13 @@ github_username:  andersonlzcosta
 sass:
     sass_dir: _sass
     style: compressed
+
+collections:
+  skills:
+    type: true
+  projects:
+    type: true
+    output: true
 
 # Build settings
 theme: minima

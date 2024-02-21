@@ -1,0 +1,22 @@
+<div>
+    <h2>Plus</h2>
+    <p>Some writting about programming and random toughts.</p>
+    <div class="posts">
+
+        {%- for post in site.posts -%}
+        <div class="post">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              <h4>{{ post.title }}</h4>
+            </a>
+            <div class="read-btn">Read More</div>
+        </div>
+        {%- endfor -%}
+
+        {{ if pagination }}
+        <div class="endless-scroll">
+            +
+        </div>
+        {{ end if }}
+
+    </div>
+</div>

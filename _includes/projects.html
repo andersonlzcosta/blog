@@ -1,0 +1,24 @@
+<div id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+        {% for project in site.projects %}
+        <div class="project">
+            <img src="{{ site.url }}/assets/img/projects/{{ project.tech }}.png" style="max-width: 90px;" alt="">
+            {{for each tech in project}}
+            <div class="tech-badges">{{ project.tech }}</div>
+           {{ next tech}}
+           <h4><a href="{{ project.url }}">{{ project.name }}</a></h4>
+
+            <div class="read-btn">Read More</div>
+        </div>
+        {% endfor %}
+
+        {{ if pagination }}
+        <div class="endless-scroll">
+            +
+        </div>
+        {{ end if }}
+
+    </div>
+</div>
