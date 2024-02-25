@@ -1,0 +1,54 @@
+#navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #01110A;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center; 
+    gap: 50px;
+  
+    #nav-links {
+      display: flex;
+      a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        background-color: #003E1F;
+        padding: 10px;
+      }
+    }
+  
+    #social-links {
+      display: flex;
+      margin-bottom: 60px;
+  
+      .social-link {
+        margin-right: 20px;
+        max-height: 70px;
+        display: flex;
+        align-items: center;
+
+        img { 
+          max-height: 70px;
+          background-color: white;
+          border-radius: 50%;
+          padding: 10px;
+        }
+  
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+  
+      .contact-btn {
+        margin-right: 0;
+        background-color: red;
+        color: whitesmoke;
+        border-radius: 25%;
+        padding: 5px 15px;
+        text-align: center;
+      }
+    }
+}
