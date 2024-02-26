@@ -1,24 +1,17 @@
-<div id="skills">
+<div class="skill">
     <h2>Languages</h2>
 
-    <div class="skills">
-
+    <div class="list-skill">
         {% for skill in site.skills %}
-        {%- if skill.type == "language" -%}
-        <div class="coin">
-            <div class="level-ring {{percentagem of mastery}}"></div>
-            <svg>{{ icon svg path }}</svg>
-            <h2><a href="{{ skill.url }}">{{ skill.name }}</a></h2>
-            <p>{{ skill.level }}</p>
-        </div>
-        {%- endif -%}
+          {%- if skill.type == "language" -%}
+            {%- include skill.html -%}
+          {%- endif -%}
         {% endfor %}
-
-        {{ if pagination }}
-        <div class="endless-scroll">
-            +
-        </div>
-        {{ end if }}
-
     </div>
+
+    {{ if pagination }}
+    <div class="endless-scroll">
+        +
+    </div>
+    {{ end if }}
 </div>

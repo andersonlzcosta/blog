@@ -1,5 +1,5 @@
 ---
 name: ruby
 type: language
-level: 70
+level: 5
 ---

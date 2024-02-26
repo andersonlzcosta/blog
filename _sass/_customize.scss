@@ -1,6 +1,6 @@
 body {
-    color: red;
-    background-color: #01110A;
+    color: $text-color;
+    background-color: $background-color;
 }
 
 a, div, label, p, h1, h2, h3, h4, h5, h6 {
@@ -8,6 +8,11 @@ a, div, label, p, h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    color: $gray-color;
 }
 
 .main-container {
@@ -36,10 +41,12 @@ a, div, label, p, h1, h2, h3, h4, h5, h6 {
 
 .white-sheet {
     background-color: #EFFAF5;
+    color: $background-color;
 }
 
 #contact {
     max-width: 500px;
     margin: 0 auto;
     min-height: 70vh;
+    color: $gray-color;
 }
