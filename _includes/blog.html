@@ -1,14 +1,15 @@
-<div>
+<div id="blog" >
     <h2>Plus</h2>
     <p>Some writting about programming and random toughts.</p>
-    <div class="posts">
+    <div class="posts-list">
 
         {%- for post in site.posts -%}
-        <div class="post">
+        <div class="post">            
+            <h4>{{ post.title }}</h4>
+
             <a class="post-link" href="{{ post.url | relative_url }}">
-              <h4>{{ post.title }}</h4>
+                <div class="read-btn">READ MORE</div>
             </a>
-            <div class="read-btn">Read More</div>
         </div>
         {%- endfor -%}
 
