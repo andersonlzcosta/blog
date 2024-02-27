@@ -1,5 +1,5 @@
 ---
-name: Voe Legal
-tech: rails
+title: Voe Legal
+tech: jekyll
 start-date: 2019-11-01
 ---

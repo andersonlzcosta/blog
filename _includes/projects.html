@@ -1,16 +1,24 @@
 <div id="projects">
     <h2>Projects</h2>
-    <div class="projects">
+    <div class="projects-list">
 
         {% for project in site.projects %}
         <div class="project">
-            <img src="{{ site.url }}/assets/img/projects/{{ project.tech }}.png" style="max-width: 90px;" alt="">
-            {{for each tech in project}}
-            <div class="tech-badges">{{ project.tech }}</div>
-           {{ next tech}}
-           <h4><a href="{{ project.url }}">{{ project.name }}</a></h4>
+            <img src="{{ site.url }}/assets/img/projects/{{ project.name | remove: '.md' }}.png" alt="">
+            <div class="content">
+             {{for each tech in project}}
+             <div class="tech-badges">
+                <img src="{{ site.url }}/assets/img/skills/{{ project.tech }}.svg" style="max-width: 30px;" alt="">
+             </div>
+            {{ next tech}}
+            <h4>{{ project.title }}</h4>
 
-            <div class="read-btn">Read More</div>
+            <a href="{{ project.url }}">
+             <div class="read-btn">
+                Read More
+             </div>
+            </a>
+           </div>
         </div>
         {% endfor %}
 
