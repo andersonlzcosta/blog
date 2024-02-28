@@ -3,25 +3,29 @@
     justify-content: center;
 }
 
-.list-skill {
+.skills-list {
     display: flex;
     justify-content: center;
+    max-width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto;
   
     .coin {
       display: flex;
       align-items: center;
       flex-direction: column;
-      text-align: center;S
+      text-align: center;
+      flex-basis: calc(100% / 4);
   
-      h3 {
+      h4 {
         margin-top: 10px;
         text-transform: capitalize;
       }
     }
 }
 
-$circle-size: 200px; // Adjust as needed
-$circle-thickness: 10px; // Adjust as needed
+$circle-size: 80px; // Adjust as needed
+$circle-thickness: 8px; // Adjust as needed
 
 .circle-container {
   display: flex;
@@ -42,7 +46,7 @@ $circle-thickness: 10px; // Adjust as needed
 
   img {
     display: block;
-    width: 100%;
+    width: 45px;
     height: auto;
   }
 
