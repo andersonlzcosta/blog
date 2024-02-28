@@ -5,10 +5,10 @@
 
         {%- for post in site.posts -%}
         <div class="post">            
-            <h4>{{ post.title }}</h4>
+            <h3>{{ post.title }}</h3>
 
             <a class="post-link" href="{{ post.url | relative_url }}">
-                <div class="read-btn">READ MORE</div>
+                <div class="read-btn">Read More</div>
             </a>
         </div>
         {%- endfor -%}
