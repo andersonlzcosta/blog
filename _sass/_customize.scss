@@ -11,8 +11,12 @@ a, div, label, p, h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-h1 {
-    color: $gray-color;
+h2 {
+    background-image: linear-gradient(to bottom, #003E1F, #E5E5E5);
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: $text-color;
 }
 
 .main-container {
