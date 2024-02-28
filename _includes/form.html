@@ -1,22 +1,18 @@
 <div id="contact">
     <h3>Let me get back to you</h3>
     <form action="#" method="post">
-        <div>
-            <label for="name">Who:</label>
-            <input type="text" id="name" name="name" required>
+        <div class="form-row">
+            <label for="contact-method">HOW</label>
+            <input type="text" id="name" name="name" placeholder="email? whatsapp? instagram? etc.." required>
         </div>
-        <div>
-            <label for="contact-method">How:</label>
-            <select id="contact-method" name="contact-method" required>
-                <option value="whatsapp">WhatsApp</option>
-                <option value="email">Email</option>
-                <option value="instagram">Instagram</option>
-            </select>
+        <div class="form-row">
+            <label for="name">WHO</label>
+            <input type="text" id="name" name="name" placeholder="your email, phone number or @username.." required>
         </div>
-        <div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+        <div class="form-row">
+            <label for="message">WHY</label>
+            <textarea id="message" name="message" placeholder="why should I message you back?" required></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button class="submit-btn" type="submit">SEND</button>
     </form>
 </div>

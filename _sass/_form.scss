@@ -1,0 +1,105 @@
+#contact {
+    max-width: 500px;
+    margin: 50px auto;
+    min-height: 70vh;
+    color: $gray-color;
+  
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .form-row {
+        flex: 0 0 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+
+        &:nth-of-type(3) {
+          align-items: start;
+        }
+      }
+  
+      label {
+        flex: 0 0 25%;
+        text-align: right;
+        padding-right: 50px;
+        font-weight: bolder;
+      }
+  
+      input,
+      select,
+      textarea {
+        
+        width: 100%;
+        padding: 5px;
+        border: none;
+        background-color: transparent;
+        transition: border-color 0.3s ease;
+        color: whitesmoke;
+  
+        &:focus {
+          outline: none;
+          border-bottom: 1px solid $text-color;
+        }
+      }
+
+      textarea {
+        min-height: 150px;
+      }
+  
+      .custom-select {
+        position: relative;
+        width: 100%;
+  
+        select {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          width: 100%;
+          padding: 5px;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          transition: border-color 0.3s ease;
+  
+          &:focus {
+            border-bottom: 1px solid $text-color;
+          }
+        }
+  
+        &::after {
+          content: '\25BC';
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+          pointer-events: none;
+        }
+      }
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      background-color: $text-color;
+      color: red;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: red;
+        color: $text-color;
+      }
+    }
+  }
+  

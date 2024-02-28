@@ -44,9 +44,20 @@ h1 {
     color: $background-color;
 }
 
-#contact {
-    max-width: 500px;
-    margin: 0 auto;
-    min-height: 70vh;
-    color: $gray-color;
+[class$="-btn"] {
+    display: inline-block;
+    padding: 8px 16px; /* Adjust padding to control width */
+    border-radius: 20px; /* Adjust border-radius to control pill shape */
+    background-color: red; /* Button background color */
+    color: whitesmoke; /* Button text color */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #0056b3; /* Button background color on hover */
+    }
 }
