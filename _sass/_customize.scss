@@ -20,25 +20,6 @@ h1 {
     margin: 0 auto;
 }
 
-#presentation {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-
-    img {
-        max-height: 199px;
-        grid-column: 1;
-    }
-
-    p {
-        grid-column: 2;
-    }
-
-    h1 {
-        grid-column: 2;
-    }
-}
-
 .white-sheet {
     background-color: #EFFAF5;
     color: $background-color;
