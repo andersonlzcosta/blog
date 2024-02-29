@@ -11,12 +11,32 @@ a, div, label, p, h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+[class$="-btn"] {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: $red-color;
+    color: $white-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+  
+    &:hover {
+      background-color: rgb(154, 5, 5);
+    }
+}
+
 h2 {
-    background-image: linear-gradient(to bottom, #003E1F, #E5E5E5);
+    background-image: $tag-green;
     display: inline-block;
     padding: 5px 10px;
     text-transform: uppercase;
     color: $text-color;
+    letter-spacing: 3px;
 }
 
 .main-container {
@@ -25,24 +45,15 @@ h2 {
 }
 
 .white-sheet {
-    background-color: #EFFAF5;
+    background-color: $white-color;
     color: $background-color;
 }
 
-[class$="-btn"] {
-    display: inline-block;
-    padding: 8px 16px; /* Adjust padding to control width */
-    border-radius: 20px; /* Adjust border-radius to control pill shape */
-    background-color: red; /* Button background color */
-    color: whitesmoke; /* Button text color */
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
+.about-me {
+    padding: 40px 30px;
+    font-size: 0.9rem;
+}
+
+.footer {
     font-size: 0.6rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
-    &:hover {
-      background-color: #0056b3; /* Button background color on hover */
-    }
 }

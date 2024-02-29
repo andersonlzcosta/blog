@@ -59,7 +59,7 @@ $circle-thickness: 8px; // Adjust as needed
     height: 100%;
     border-radius: 50%;
     box-sizing: border-box;
-    border: $circle-thickness solid #ccc; // Lighter color
+    border: $circle-thickness solid $light-gray-color; // Lighter color
   }
 
   &::after {
@@ -71,7 +71,7 @@ $circle-thickness: 8px; // Adjust as needed
     height: 100%;
     border-radius: 50%;
     box-sizing: border-box;
-    border: $circle-thickness solid #000; // Darker color
+    border: $circle-thickness solid $black-color; // Darker color
     clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% calc(100% - var(--level)), 50% calc(100% - var(--level)));
   }
 }

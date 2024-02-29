@@ -1,8 +1,9 @@
 #navbar {
   position: fixed;
+  margin-top: 90vh;
   bottom: 40px;
   width: 100%;
-  background-color: #01110A;
+  background-color: $black-color;
   display: grid;
   grid-template-rows: auto auto;
   justify-items: center; 
@@ -13,17 +14,17 @@
     margin-top: 2rem;
     display: flex;
     a {
-      color: white;
+      color: $white-color;
       text-decoration: none;
       margin-right: 15px;
-      background-image: linear-gradient(to bottom, #003E1F, #E5E5E5);
+      background-image: $tag-green;
       padding: 10px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 3px;
 
       &:hover {
-        background-image: linear-gradient(to top, #003E1F, #E5E5E5);
+        background-image: linear-gradient(to bottom, #014825, $green-color);
       }
     }
   }
@@ -41,13 +42,13 @@
 
       img { 
         max-height: 35px;
-        background-color: white;
+        background-color: $white-color;
         border-radius: 50%;
         padding: 10px;
       }
 
       a {
-        color: white;
+        color: $white-color;
         text-decoration: none;
       }
     }
