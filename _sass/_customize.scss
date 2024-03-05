@@ -39,7 +39,7 @@ h2 {
     letter-spacing: 3px;
 }
 
-.main-container {
+.wrapper {
     max-width: 500px;
     margin: 0 auto;
 }
@@ -47,6 +47,9 @@ h2 {
 .white-sheet {
     background-color: $white-color;
     color: $background-color;
+    box-shadow: 4px 4px 50px rgba(239, 250, 245, 0.25); //$white-color as rgba
+    margin-bottom: 50px;
+    border-radius: 1px;
 }
 
 .about-me {
