@@ -1,77 +1,68 @@
+$circle-size: 80px;
+
 .skills {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .skills-list {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  .coin {
     display: flex;
-    justify-content: center;
-    max-width: 90%;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: calc(100% / 4);
+    position: relative;
+
+    h4 {
+      margin-top: 10px;
+    }
+    
+    .outer-circle {
+      height: $circle-size;
+      width: $circle-size;
+      border-radius: 50%;
+      box-shadow: 6px 6px 10px -1px rgb(0,0,0,0.15),
+                  -6px -6px 10px -1px rgb(255,255,255,0.7);
+      .inner-circle {
+        height: $circle-size;
+        width: $circle-size;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 4px 4px 6px -1px rgb(0,0,0,0.2),
+                    inset -4px -4px 6px -1px rgb(255,255,255,0.7),
+                    -0.5px -0.5px 0px rgb(255,255,255,1),
+                    0.5px 0.5px 0px rgb(0,0,0,0.15),
+                    0px 12px 10px -10px rgb(0,0,0,0.05);
   
-    .coin {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      flex-basis: calc(100% / 4);
-  
-      h4 {
-        margin-top: 10px;
-        text-transform: capitalize;
+        img {
+          display: block;
+          width: 45px;
+          height: auto;
+        }
       }
     }
-}
 
-$circle-size: 80px; // Adjust as needed
-$circle-thickness: 8px; // Adjust as needed
+    circle {
+      fill: none;
+      stroke: url(#GradientColor);
+      stroke-width: 3px;
+      stroke-dasharray: 217;
+      stroke-dashoffset: var(--level);
+    }
 
-.circle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: $circle-size;
-}
-
-.circle {
-  position: relative;
-  width: $circle-size;
-  height: $circle-size;
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    display: block;
-    width: 45px;
-    height: auto;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-sizing: border-box;
-    border: $circle-thickness solid $light-gray-color; // Lighter color
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-sizing: border-box;
-    border: $circle-thickness solid $black-color; // Darker color
-    clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% calc(100% - var(--level)), 50% calc(100% - var(--level)));
+    svg {
+      position: absolute;
+      top: 0;
+      transform: rotate(90deg) scaleX(-1);
+    }
   }
 }

@@ -1,8 +1,18 @@
 <div class="coin">
-    <div class="circle-container">
-        <div class="circle" style="--level: {{ skill.level }}%;">
+    <div class="outer-circle">
+        <div class="inner-circle">
             <img src="{{ site.url }}/assets/img/skills/{{ skill.name }}.svg" alt="">
         </div>
     </div>
-    <h4>{{ skill.name }}</h4>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="80px" height="80px">
+        <defs>
+            <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#01753b"/>
+                <stop offset="100%" stop-color="#003E1F"/>
+            </linearGradient>
+        </defs>
+        {% assign level = 217 | times: skill.level | divided_by: 100 | minus: -217 %}
+        <circle cx="40" cy="40" r="35" stroke-linecap="round" style="--level: {{ level }};"/>
+    </svg>
+    <h4>{{ skill.title }}</h4>
 </div>
